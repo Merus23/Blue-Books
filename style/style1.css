@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lora, Ubuntu;
+  
+  }
+  #main {
+    margin: auto 0px auto 0px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(240, 255, 240, 1);
+  }
+  #logo{
+    margin: auto 0px 0px auto;
+    font-size: 15em;
+    color: rgb(30, 100, 154);
+    letter-spacing: -1.1cm;
+    line-height: -3cm;
+  
+  }
+  #slogan{
+    margin-top: -50px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 0.1cm;
+  }
+  #button{
+  
+  }
+  /*#button:hover {
+    margin-top: 100px;
+    color: black;
+    width: auto;
+    font-size: 40px;
+    height: auto; 
+    background-color: rgba(30, 100, 154, 0.9);
+    border-radius:9px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+  }*/
+  #login{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../public/images/images);
+  }
+  /*Escondendo a barra de rolangem, também pode ser feito com 'overflow = hidden', no entanto o site perde a funcionalidade de rolagem*/
+  ::-webkit-scrollbar { 
+    display: none; 
+  }
+  
+  #email{
+  
+  }
