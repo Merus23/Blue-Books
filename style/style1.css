@@ -25,30 +25,46 @@
     letter-spacing: 0.1cm;
   }
   #button{
-  
+    font-family: "Trebuchet MS";
+    margin-top: 50px;
+    color: rgb(1, 115, 245);
+    border-radius: 8px;
+    font-size: 50px;
+    border-color: rgb(1, 115, 245);
+    background-color: white;
+    
   }
-  /*#button:hover {
-    margin-top: 100px;
-    color: black;
-    width: auto;
-    font-size: 40px;
-    height: auto; 
-    background-color: rgba(30, 100, 154, 0.9);
-    border-radius:9px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-  }*/
+  #button:hover {
+    font-family: "Trebuchet MS";
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: 50px;
+    border-color: rgb(1, 115, 245);
+    background-color: rgb(1, 115, 245);
+    cursor: pointer;
+    
+  }
+  #painel{
+    
+    width: 400px;
+    height: 600px;
+    border-radius: 8px;
+    background-color: rgba(240, 255, 240, 1);
+  }
   #login{
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
     height: 100vh;
-    background-image: url(../public/images/images);
+    background:url(../image/imagem-2.jpg) center ;
+
   }
+  
   /*Escondendo a barra de rolangem, também pode ser feito com 'overflow = hidden', no entanto o site perde a funcionalidade de rolagem*/
   ::-webkit-scrollbar { 
     display: none; 
   }
   
-  #email{
-  
-  }
