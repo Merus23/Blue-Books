@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <!--
+    Iniciar o servidor com browser-sync [configuração padrão utilizada]
+    
+    browser-sync start --server --directory --files "**/*"
+    http://localhost:3000/index.html
+  -->
+  <head>
+      <meta charset="UTF-8">
 
 
-    <link rel="stylesheet" href="./style/style1.css">
-    <link rel="icon" href="./icons/blue-icon.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue&Books</title>
-</head>
-<body>
-    <div className="screen">
+      <link rel="stylesheet" href="./style/style1.css">
+      <link rel="icon" href="./icons/blue-icon.png"/>
+
+      <!--Fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blue&Books</title>
+  </head>
+  <body>
+      <div className="screen">
         <div id='main'>
-          <h1 id='logo'>Blue & Books</h1>
-          <h4 id='slogan'>Leia livros e compartilhe conhecimento</h4>
+          <h1 class='logo'>Blue & Books</h1>
+          <h4 class='slogan'>Leia livros e compartilhe conhecimento</h4>
           <a href='#login'>
-            <button type='button' id='button'>Comece a diversão</button>
+            <button type='button' id='button-main' class='button'>comece a diversão</button>
           </a>
         </div>
-        
-        <div id="login">
-          
-            <div id="painel">
-              
-                <form action="./php/"> 
-                    
-                        
-                </form>
+        <div id="login">  
+          <div id="painel">
+            <h1>Painel</h1>
+            <form action="./php/"> 
+            
+              <button type="submit"  id="teste1">
+                <span id='teste2'>LogIn</span>
+              </button>
+         
 
-            </div>  
-      
+
+              <button  class='convidado-painel' class='button' type="submit">
+                Convidado
+                <div>
+                  <div id="convidado-blue"><img src="icons/icon-arow-blue.png"></div>
+                  <div id="convidado-white"> <img src="icons/icon-arow-white.png"></div>
+                </div>
+              </button>
+              
+              
+              <button class='inscreva' class='button' type="submit">
+                Inscreva-se 
+                <img src="icons/icon-heart-blue.png">
+              </button>
+              
+                
+              <div style="display: none;">
+                <!--Está div será utilizada para inserção dos icones de redes sociais-->
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    
-</body>
+  </body>
 </html>

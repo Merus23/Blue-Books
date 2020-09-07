@@ -1,70 +1,192 @@
+/********************Instruções***********************/
+/*
+  1 - Sempre ao especificar um identificador (ou seja, um ID), utilizar hierarquia de divs para marcar o elemento
+*/
 *{
     margin: 0;
     padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;   
     font-family: Lora, Ubuntu;
-  
+    --teste: display: none;
+    
   }
+
+/*********************************** Início das configurações da "div Main"  ******************************/
   #main {
-    margin: auto 0px auto 0px;
     width: 100vw;
     height: 100vh;
     text-align: center;
     background-color: rgba(240, 255, 240, 1);
+    min-width: 1080px;
   }
-  #logo{
+  .logo{
     margin: auto 0px 0px auto;
-    font-size: 15em;
-    color: rgb(30, 100, 154);
+    font-size: 1350%;
+    color: rgb(64, 115, 155);
     letter-spacing: -1.1cm;
     line-height: -3cm;
-  
   }
-  #slogan{
+  .slogan{
     margin-top: -50px;
     color: rgba(0, 0, 0, 1);
     letter-spacing: 0.1cm;
   }
-  #button{
-    font-family: "Trebuchet MS";
-    margin-top: 50px;
-    color: rgb(1, 115, 245);
-    border-radius: 8px;
+  #button-main{
+    border: 2.5px solid rgb(4, 116, 196);
+    margin: 60px 0px 0px 0px;
     font-size: 50px;
-    border-color: rgb(1, 115, 245);
-    background-color: white;
-    
+    padding: 0px 3px 0px 3px;
   }
-  #button:hover {
-    font-family: "Trebuchet MS";
-    margin-top: 50px;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
+  #button-main:hover {
+    border: 2.5px solid rgb(4, 116, 196);
+    margin: 60px 0px 0px 0px;
     font-size: 50px;
-    border-color: rgb(1, 115, 245);
-    background-color: rgb(1, 115, 245);
-    cursor: pointer;
-    
+    padding: 0px 3px 0px 3px;
   }
-  #painel{
-    
-    width: 400px;
-    height: 600px;
-    border-radius: 8px;
-    background-color: rgba(240, 255, 240, 1);
-  }
+ 
+/************************************** Fim da "div main" ************************************************/
+  
+ 
+/******************************* Início das configurações da "div login" *********************************/
   #login{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+    text-align: center;
     width: 100vw; 
     height: 100vh;
-    background:url(../image/imagem-2.jpg) center ;
+    background:url(../image/imagem-2.jpg);
+    background-position:center ;
+  }
 
+  #painel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    
+    width: 20vw;
+    height: 65vh;
+    border-radius: 8px;
+    background-color: rgba(240, 255, 240, 1);
+  }
+  #teste1{
+    display: block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  #teste1 span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  #teste1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #teste1:hover span {
+    padding-right: 25px;
+  }
+  #teste1:hover span:after {
+    opacity: 1;
+    right: 0;
   }
   
-  /*Escondendo a barra de rolangem, também pode ser feito com 'overflow = hidden', no entanto o site perde a funcionalidade de rolagem*/
+  
+  #teste2{
+    
+  }
+  
+  #btn-painel{
+    font-size: 25px;
+  }
+
+  
+  #btn-painel-login{
+    
+  }
+
+  
+  #btn-painel img{
+    
+  }
+  
+ #convidado-blue{
+   border: 1px solid red;
+   position:absolute;
+   z-index:5;
+   
+ }
+
+ #convidado-white{
+  border: 1px solid red;
+  position:relative;
+  z-index:4;
+   
+}
+
+
+#convidado-white:hover{
+ border: 1px solid red;
+ position:relative;
+ z-index:1;
+  
+}
+#convidado-blue:hover{
+  border: 1px solid red;
+  position:absolute;
+  z-index:2;
+  
+}
+
+
+
+
+
+  /**************************************** Fim do login*************************************************/
+
+  /************************************* Configurações gerais********************************************/
   ::-webkit-scrollbar { 
+    /*Escondendo a barra de rolangem, também pode ser feito com 'overflow = hidden', no entanto o site perde a funcionalidade de rolagem*/
     display: none; 
   }
   
+  .button{ 
+    /*Azul claro = 30 155 245*/
+    font-family: "PT Sans", sans-serif;
+    color: rgb(4, 116, 196);
+    border-radius: 8px;
+    border-color: rgb(4, 116, 196);
+    background-color: white;
+    text-align:center;
+    outline: none;
+  }
+  .button:hover {
+    font-family: "PT Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-color: rgb(4, 116, 196);
+    background-color: rgb(4, 116, 196);
+    cursor: pointer;
+    background: linear-gradient( to bottom, rgba(4, 116, 196, 0.9), rgba(4, 116, 196, 1));
+    text-align:center;
+    outline: none;
+  }
