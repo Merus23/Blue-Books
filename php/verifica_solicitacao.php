@@ -6,5 +6,5 @@
     btn_verificador ("btn-convidado");
     btn_verificador ("btn-singup");
 
-
+    echo btn_valor("teste1");
 ?>
