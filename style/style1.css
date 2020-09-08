@@ -53,13 +53,14 @@
   #login{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;   
     text-align: center;
     width: 100vw; 
     height: 100vh;
     background:url(../image/imagem-2.jpg);
-    background-position:center ;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   #painel{
@@ -68,99 +69,47 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    
     width: 20vw;
     height: 65vh;
     border-radius: 8px;
     background-color: rgba(240, 255, 240, 1);
+   
   }
-  #teste1{
+  #btn-painel{
     display: block;
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    color: #FFFFFF;
+    border: 2.5px solid rgba(4, 116, 196, 1);
     text-align: center;
     font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
+    padding: 15px;
+    width: 350px;
+    transition: all 0.3s;
     cursor: pointer;
-    margin: 5px;
+    margin: 25px 0px 0px 0px;
+    
+    
   }
-  #teste1 span{
+  #btn-painel span{
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    /*transition: 0.2s;*/
   }
-  #teste1 span:after {
+  #btn-painel span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
+    transition: 0.1s;
   }
-  #teste1:hover span {
+  #btn-painel:hover span {
     padding-right: 25px;
   }
-  #teste1:hover span:after {
+  #btn-painel:hover span:after {
     opacity: 1;
     right: 0;
   }
   
-  
-  #teste2{
-    
-  }
-  
-  #btn-painel{
-    font-size: 25px;
-  }
-
-  
-  #btn-painel-login{
-    
-  }
-
-  
-  #btn-painel img{
-    
-  }
-  
- #convidado-blue{
-   border: 1px solid red;
-   position:absolute;
-   z-index:5;
-   
- }
-
- #convidado-white{
-  border: 1px solid red;
-  position:relative;
-  z-index:4;
-   
-}
-
-
-#convidado-white:hover{
- border: 1px solid red;
- position:relative;
- z-index:1;
-  
-}
-#convidado-blue:hover{
-  border: 1px solid red;
-  position:absolute;
-  z-index:2;
-  
-}
-
-
-
-
-
   /**************************************** Fim do login*************************************************/
 
   /************************************* Configurações gerais********************************************/

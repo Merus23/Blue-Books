@@ -9,8 +9,9 @@
   <head>
       <meta charset="UTF-8">
 
-
+      
       <link rel="stylesheet" href="./style/style1.css">
+      <link rel="stylesheet" type="text/css" href="./style/normalise.css">
       <link rel="icon" href="./icons/blue-icon.png"/>
 
       <!--Fonts-->
@@ -31,29 +32,19 @@
         <div id="login">  
           <div id="painel">
             <h1>Painel</h1>
-            <form action="./php/"> 
-            
-              <button type="submit"  id="teste1">
-                <span id='teste2'>LogIn</span>
+            <form action="./php/verifica_solicitacao.php" method="POST"> 
+        
+              <button type="submit"  id="btn-painel" class='button' name='btn-login'>
+                <span>Log-In</span><br>
               </button>
-         
 
+              <button type="submit"  id="btn-painel" class='button' name='btn-convidado'>
+                <span>Convidado</span>
+              </button>
 
-              <button  class='convidado-painel' class='button' type="submit">
-                Convidado
-                <div>
-                  <div id="convidado-blue"><img src="icons/icon-arow-blue.png"></div>
-                  <div id="convidado-white"> <img src="icons/icon-arow-white.png"></div>
-                </div>
+              <button type="submit"  id="btn-painel" class='button' name='btn-singup'>
+                <span>Cadastre-se</span>
               </button>
-              
-              
-              <button class='inscreva' class='button' type="submit">
-                Inscreva-se 
-                <img src="icons/icon-heart-blue.png">
-              </button>
-              
-                
               <div style="display: none;">
                 <!--Está div será utilizada para inserção dos icones de redes sociais-->
               </div>
