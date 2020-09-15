@@ -70,7 +70,10 @@
     align-content: center;
     align-items: center;
     width: 20vw;
-    height: 65vh;
+    height: 70vh;
+    min-width: 250px;
+    min-height:500px;
+    max-height: 70vh;
     border-radius: 8px;
     background-color: rgba(240, 255, 240, 1);
    
@@ -81,7 +84,7 @@
     text-align: center;
     font-size: 28px;
     padding: 15px;
-    width: 350px;
+    width: 18vw;
     transition: all 0.3s;
     cursor: pointer;
     margin: 25px 0px 0px 0px;
