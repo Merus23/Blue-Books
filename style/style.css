@@ -29,19 +29,19 @@
     line-height: -3cm;
   }
   .slogan{
-    margin-top: -50px;
+    margin-top: -40px;
     color: rgba(0, 0, 0, 1);
     letter-spacing: 0.1cm;
   }
   #button-main{
     border: 2.5px solid rgb(4, 116, 196);
-    margin: 60px 0px 0px 0px;
+    margin: 80px 0px 0px 0;
     font-size: 50px;
     padding: 0px 3px 0px 3px;
   }
   #button-main:hover {
     border: 2.5px solid rgb(4, 116, 196);
-    margin: 60px 0px 0px 0px;
+    margin: 80px 0px 0px 0px;
     font-size: 50px;
     padding: 0px 3px 0px 3px;
   }
@@ -63,21 +63,9 @@
     background-attachment: fixed;
   }
 
-  #painel{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    width: 20vw;
-    height: 70vh;
-    min-width: 250px;
-    min-height:500px;
-    max-height: 70vh;
-    border-radius: 8px;
-    background-color: rgba(240, 255, 240, 1);
-   
-  }
+  
+  
+  
   #btn-painel{
     display: block;
     border: 2.5px solid rgba(4, 116, 196, 1);
@@ -142,3 +130,36 @@
     text-align:center;
     outline: none;
   }
+
+  /*********************Trabalhando no momento*************************/
+  .painel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 70vh;
+    min-width: 250px;
+    min-height:500px;
+    max-height: 70vh;
+    border-radius: 8px;
+    background-color: rgba(240, 255, 240, 1);
+   
+  }
+
+  .painel h1, #painel h1{
+    font-size:1.8em;
+    font-weight: 900;
+  }
+
+  .painel span, #painel span{
+    font-size:0.8em;
+  }
+  #painel1{
+    display: none;   
+  }
+  #painel2{
+    display: none;   
+  }
+

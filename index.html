@@ -18,7 +18,7 @@
       <meta charset="UTF-8">
 
       
-      <link rel="stylesheet" href="./style/style1.css">
+      <link rel="stylesheet" href="./style/style.css">
       <link rel="stylesheet" type="text/css" href="./style/normalise.css">
       <link rel="icon" href="./icons/blue-icon.png"/>
 
@@ -27,7 +27,8 @@
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <script src="./script/functions/function.js"></script>
+      <script src="./script/script.js"></script>
+      <script type="text/javascritp" src="./script/functions/function.js"></script>
       <title>Blue&Books</title>
   </head>
   <body>
@@ -40,26 +41,84 @@
           </a>
         </div>
         <div id="login">  
-          <div id="painel">
-            <h1 style="font-size:1.8em; font-weight: 900;"> Bem vindo ao Seu admirável mundo novo</h1>
+          <div id="painel" class="painel">
+            <h1> Bem vindo ao Seu admirável mundo novo</h1>
             <form action="./php/verifica_solicitacao.php" method="POST"> 
-        
-              <button type="button"  id="btn-painel" class='button' name='btn-login'>
-                <span style="font-size:0.8em">Log-In</span>
+              <!-- Teste para conseguir rotacionar as divs
+                <span>
+                  Qualquer coisa 
+                  <span id="pontos">.....</span>
+                  <span id="mais" style="display: none;">Mais qualquer coisa</span>
+                </span>
+                <button id="btn" onclick="teste()" type='button'>Teste aqui</button>
+              -->
+              <button type="button"  id="btn-painel" class='button' name='btn-login' onclick="mostrarLogIn()"> 
+                <span>Log-In</span>
               </button>
 
               <button type="submit"  id="btn-painel" class='button' name='btn-convidado' >
-                <span style="font-size:0.8em">Convidado</span>
+                <span>Convidado</span>
+              </button>
+
+              <button type="button"  id="btn-painel" class='button' name='btn-singup' onclick="mostrarSigUp()">
+                <span>Cadastre-se</span>
+              </button>
+              <div style="display: none;">
+                <!--Está div será utilizada para inserção dos icones de redes sociais-->
+              </div>
+              
+            </form>
+          </div>
+
+          
+          <div id="painel1" class="painel">
+            <h1> Bem vindo ao Seu admirável mundo novo</h1><br>painel-1
+            <form action="./php/verifica_solicitacao.php" method="POST"> 
+              <p>
+                DESCRIÇÃO: Crie três botões (inputs): type="email", type="password" e type="submit". A 
+                estilização será a seguinte: os inputs email e password terão bordas inferiores (apenas,
+                para simular linhas - da mesma peleta de cor que utilizamos).
+              </p>
+              <input type="text" name="teste1" id="btn-painel" class="button" placeholder="E-mail">
+              <button type="button"  id="btn-painel" class='button' name='btn-login'>
+                <span>Log-In</span>
+              </button>
+
+              <button type="submit"  id="btn-painel" class='button' name='btn-convidado' >
+                <span>Convidado</span>
               </button>
 
               <button type="button"  id="btn-painel" class='button' name='btn-singup'>
-                <span style="font-size:0.8em">Cadastre-se</span>
+                <span>Cadastre-se</span>
               </button>
               <div style="display: none;">
                 <!--Está div será utilizada para inserção dos icones de redes sociais-->
               </div>
             </form>
           </div>
+
+          <div id="painel2" class="painel" >
+            <h1> Bem vindo ao Seu admirável mundo novo</h1> <br>painel-2
+            <form action="./php/verifica_solicitacao.php" method="POST"> 
+        
+              <button type="text"  id="btn-painel" class='button' name='btn-login'>
+                <span>Log-In</span>
+              </button>
+
+              <button type="text"  id="btn-painel" class='button' name='btn-convidado' >
+                <span>Convidado</span>
+              </button>
+
+              <button type="submit"  id="btn-painel" class='button' name='btn-singup'>
+                <span>Cadastre-se</span>
+              </button>
+              <div style="display: none;">
+                <!--Está div será utilizada para inserção dos icones de redes sociais-->
+              </div>
+            </form>
+          </div>
+
+
         </div>
   </body>
 </html>
